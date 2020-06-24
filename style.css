@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 629px;
+    margin: 0 auto;
+    font-family: Myriad Pro, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 600;
+}
+
+h1 {
+    font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h2 {
+    font-size: calc(20px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+p, li, a {
+    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header ul.links li {
+    list-style-type: none;
+    padding: 0 10px;
+    font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+ul.links li:first-child {
+    padding-left: 0;
+}
+
+ul.links li:last-child {
+    padding-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header a.list_link:hover {
+    color: #400080;
+    border-bottom: 2px solid #400080;
+}
+
+section {
+    margin: auto;
+}
+
+.imgcentered {
+    width: 100%; /*resizes the image to fit container size */
+    height: 100%;
+    margin: auto 0;
+}
+
+.substack {
+    padding-top: 20px;
+    width: 100%; /*resizes the image to fit container size */
+    max-height: 184px;
+    margin: auto 0;
+    border: 1px solid #EEE;
+    background: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(2, 220px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.current_link {
+    color: #400080;
+    border-bottom: 2px solid #400080;
+}
+
+section ul {
+    padding-left: 30px;
+}
+
+section ul li {
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+section ul li a, section a {
+    color: #00818F;
+    text-decoration: underline;
+}
+
+section ul li a:hover, section a:hover {
+    text-decoration: underline;
+}
+
+section ul li:last-child {
+    line-height: 130%;
+    margin-bottom: 12.5px;
+}
+
+.hide_desktop {
+    display: none;
+}
+
+.padding_left_10px {
+    padding-left: 10px;
+}
+
+@media (max-width:600px) {
+
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 150px);
+        grid-gap: 5px;
+    }
+
+    .grid img {
+        width: 100%;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        border-top: 1px solid #CCCCCC;
+    }
+
+    .footer_top {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 10px 30px 0;
+    }
+
+    .footer_ul {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation {
+        display: none;
+    }
+    
+    .hide_mobile {
+        display: none;
+    }
+
+    header ul.links li {
+        list-style-type: none;
+        padding: 1.5vh 7.5vw;
+    }
+
+    header ul.links li:nth-child(1), header ul.links li:nth-child(3) {
+        padding: 0;
+    }
+
+    header {
+        border-bottom: 1px solid #DFE1E1;
+    }
+
+    section {
+        margin: 0 10px;
+    }
+
+    .navigation {
+        width: 100%;
+        border-top: 1px solid #F2F2F2;
+    }
+
+    .hide_desktop {
+        display: flex;
+    }
+
+    .mobile_menu {
+        border: 2px solid #400080;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 7.5px 12.5px;
+        color: #400080;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        margin-left: 5px;
+      }
+
+    .current_link {
+        border-left: 7.5px solid #400080;
+        border-bottom: 0px;
+        color: black;
+        padding-left: 2.5px;
+        align-items: flex-start;
+        padding: 30px 0 30px 10px;
+        list-style-type: none;
+        border-top: 1px solid #CCCCCC;
+        width: 100%;
+    }
+
+    .footer_li {
+        align-items: flex-start;
+        padding: 30px 0 30px 17.5px;
+        list-style-type: none;
+        border-top: 1px solid #CCCCCC;
+        width: 100%;
+    }
+}
