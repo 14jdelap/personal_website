@@ -52,7 +52,7 @@ ul.links li:last-child {
     padding-right: 0;
 }
 
-a {
+header a {
     text-decoration: none;
     color: black;
 }
@@ -109,8 +109,8 @@ section ul li a, section a {
     text-decoration: underline;
 }
 
-section ul li a:hover, section a:hover {
-    text-decoration: underline;
+section ul li a:visited, section a:visited {
+    color: #400080;
 }
 
 section ul li:last-child {
