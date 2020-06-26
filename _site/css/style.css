@@ -1,0 +1,235 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Start of Global styles*/
+body {
+    font-family: Myriad Pro, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 629px;
+}
+
+h1 {
+    font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h2 {
+    font-size: calc(20px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+p, li, a {
+    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+section {
+    margin: auto;
+}
+
+/* End of Global styles*/
+
+
+.padding_left_10px {
+    padding-left: 10px;
+}
+
+/* Start of header*/
+
+.flex_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.desktop_nav {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul.desktop_nav li {
+    font-size: calc(15px + (18 - 15) * ((100vw - 300px) / (1600 - 300)));
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+ul.desktop_nav li:first-child {
+    padding-left: 0;
+}
+
+ul.desktop_nav li:last-child {
+    padding-right: 0;
+}
+
+.nav_link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    border-bottom: 2px solid #400080;
+    color: #400080;
+}
+
+.current_page {
+    border-bottom: 2px solid #400080;
+    color: #400080;
+}
+
+/* End of header*/
+
+
+/* Start of hero*/
+.imgcentered {
+    height: 100%;
+    margin: auto 0;
+    width: 100%; /*resizes the image to fit container size */
+}
+/* End of hero*/
+
+/* Start of Substack*/
+.substack {
+    background: white;
+    border: 1px solid #EEE;
+    margin: auto 0;
+    max-height: 184px;
+    padding-top: 20px;
+    width: 100%; /*resizes the image to fit container size */
+}
+/* End of Substack*/
+
+/* Start of image gallery*/
+.img_gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(2, 220px);
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* End of image gallery*/
+
+/* Start of body lists*/
+.lists {
+    padding-left: 30px;
+}
+
+.lists li {
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.lists li a, section a {
+    color: #00818F;
+    text-decoration: underline;
+}
+
+.lists li a:visited, section a:visited {
+    color: #400080;
+}
+
+.lists li:last-child {
+    margin-bottom: 12.5px;
+}   
+
+/* End of body lists*/
+
+/* Start of responsive*/
+
+.collapse_desktop {
+    display: none;
+}
+
+@media (max-width:600px) {
+    /* Start of global styles*/
+    section {
+        margin: 0 10px;
+    }
+
+    .collapse_desktop {
+        display: flex;
+    }
+
+    .collapse_mobile {
+        display: none;
+    }
+    /* End of global styles*/
+
+
+    /* Start of header*/
+    .mobile_menu {
+        border-radius: 5px;
+        border: 2px solid #400080;
+        color: #400080;
+        margin-right: 10px;
+        padding: 7.5px 12.5px;
+    }
+    /* End of header*/
+
+    /* Start of image gallery*/
+        .img_gallery {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(3, 150px);
+        }
+
+        .img_gallery img {
+            width: 100%;
+        }
+    /* End of image gallery*/
+
+    /* Start of footer*/
+    .footer {
+        background-color: #F2F2F2;
+        border-top: 1px solid #CCCCCC;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer a {
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .footer_top {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 10px 30px 0;
+        width: 100%;
+    }
+
+    .icon {
+        display: inline-block;
+        fill: currentColor;
+        height: 1em;
+        margin-left: 5px;
+        stroke-width: 0;
+        stroke: currentColor;
+        width: 1em;
+    }
+
+    .current_page_footer {
+        border-left: 7.5px solid #400080;
+        padding: 30px 0 30px 10px;
+    }
+
+    .footer_li {
+        align-items: flex-start;
+        border-top: 1px solid #CCCCCC;
+        list-style-type: none;
+        padding: 30px 0 30px 17.5px;
+        width: 100%;
+    }
+    /* End of footer*/
+}
