@@ -3,7 +3,9 @@
 {% include head.html %}
     <body id="top">
         {% include header.html %}
-        {% include picture.html %}
+        {% if page.png_type == "image/png" %}
+            {% include picture.html %}
+        {% endif %}
         {{content}}
         {% include footer.html %}
     </body>

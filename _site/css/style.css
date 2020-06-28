@@ -78,7 +78,7 @@ ul.desktop_nav li:last-child {
     color: #400080;
 }
 
-.current_page {
+.current_page_header {
     border-bottom: 2px solid #400080;
     color: #400080;
 }
@@ -167,12 +167,14 @@ ul.desktop_nav li:last-child {
     /* Start of header*/
     .flex_header {
         padding: 0 10px;
+        border-bottom: 1px solid #CCCCCC;
     }
     .mobile_menu {
         border-radius: 5px;
         border: 2px solid #400080;
         color: #400080;
         padding: 7.5px 12.5px;
+        text-decoration: none;
     }
     /* End of header*/
 
