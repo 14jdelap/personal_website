@@ -165,11 +165,13 @@ ul.desktop_nav li:last-child {
 
 
     /* Start of header*/
+    .flex_header {
+        padding: 0 10px;
+    }
     .mobile_menu {
         border-radius: 5px;
         border: 2px solid #400080;
         color: #400080;
-        margin-right: 10px;
         padding: 7.5px 12.5px;
     }
     /* End of header*/

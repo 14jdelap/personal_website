@@ -1,39 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>José de la Puente</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Hi, I'm José de la Puente. I produce the
-        Build your Superpower show to help people become uniquely great.
-        Past guests include the founders of Shazam and Metro Bank.">
-        <meta name="og:description" content="Hi, I'm José de la Puente. I produce the
-        Build your Superpower show to help people become uniquely great.
-        Past guests include the founders of Shazam and Metro Bank.">
-        <meta name="autor" content="José de la Puente">
-        <meta name="keywords" content="podcast, José de la Puente, build your superpower, start-ups, design, podcast">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="icon" type="image/png" href="images/JP.png" sizes="16x16">
-    </head>
-    <body id="top">
-        <header class="flex_header padding_left_10px">
-            <p class="logo"><a href="index.html">José de la Puente</a></p>
-            <a href="#bottom" class="collapse_desktop mobile_menu">Menu</a>
-            <div class="collapse_mobile">
-                <ul class="desktop_nav">
-                    <li><a class="nav_link" href="index.html">Start Here</a></li>
-                    <li><a class="nav_link current_page" href="recommendations.html">Recommendations</a></li>
-                   <!-- <li><a class="list_link" href="blog.html">Blog</a></li> -->
-                </ul>
-            </div>
-        </header>
+---
+layout: index
+title: Recommendations | José de la Puente
+description: Hi, I'm José de la Puente. These are recommendations of things I love. It includes books, movies, music, and travel suggestions.
 
-        <picture>
-            <source srcset="Images/aguirre.webp" type="image/webp">
-            <source srcset="Images/aguirre.png" type="image/png">
-            <img src="Images/aguirre.png" alt="Aguirre in the Amazon, clutching a monkey" title="Aguirre in the Amazon, clutching a monkey" class="imgcentered"/>
-        </picture>
+webp: Images/aguirre.webp
+webp_type: image/webp
+png: Images/aguirre.png
+png_type: image/png
+img_title: Aguirre in the Amazon, clutching a monkey
+width: 629px
+height: 323px
 
+header_classes_start: nav_link
+header_classes_recommendations: nav_link current_page
+footer_classes_start: footer_li
+footer_classes_recommendations: footer_li current_page_footer
+link_index: index.html
+link_recommendations: #top
+---
         <section title="Context">
             <h1 class="title">What I recommend</h1>
             <p>There's a character in Murakami's "Norwegian Wood" who only reads books
@@ -124,14 +108,5 @@
                 <li><a class="list_link" rel="noopener" href="https://docs.google.com/document/d/10qC8wKQfIOx-HpBKjoE-GNC_pRFMTaI1_3IhLKJgzLo/edit?usp=sharing" target="_blank">You have to go to this bakery in Paris »</a></li>
             </ul>
         </section>
-
-        <footer class="footer collapse_desktop" id="bottom">
-            <a href="#top" class="footer_top">Return to top <svg class="icon icon-arrow-up"><symbol id="icon-arrow-up" viewBox="0 0 32 32">
-                <path d="M16 1l-15 15h9v16h12v-16h9z"></path>
-                </symbol><use xlink:href="#icon-arrow-up"></use></svg></a>
-            <a href="index.html" class="footer_li">Start Here »</a>
-            <a href="#top" class="footer_li current_page_footer">Recommendations »</a>
-            <!-- <a href="#" class="footer_li">Blog »</a></li> -->
-        </footer>
     </body>
 </html>
